@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "realizacaos",
+  "info": {
+    "singularName": "realizacao",
+    "pluralName": "realizacaos",
+    "displayName": "Realizaçao"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AlunosBeneficiados": {
+      "type": "biginteger"
+    },
+    "Empregos": {
+      "type": "biginteger"
+    },
+    "Voluntarios": {
+      "type": "biginteger"
+    }
+  }
+}
