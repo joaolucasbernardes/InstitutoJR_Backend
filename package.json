@@ -4,7 +4,7 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
-    "build": "node -e 'console.log(\"Skipping hostname command\")' && strapi build",
+    "build": "strapi build",
     "start": "strapi start",
     "develop": "strapi develop",
     "strapi": "strapi"

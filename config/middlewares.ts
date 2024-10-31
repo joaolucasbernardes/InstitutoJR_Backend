@@ -7,7 +7,7 @@ export default [
     config: {
       origin: [
         'http://localhost:4200', // URL frontend Angular em desenvolvimento
-        'https://instituto-jr-frontend.vercel.app/', // URL em produção
+        'https://instituto-jr-frontend.vercel.app', // URL em produção
       ],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Métodos permitidos
     },
