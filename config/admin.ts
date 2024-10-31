@@ -14,4 +14,6 @@ export default ({ env }) => ({
     nps: env.bool('FLAG_NPS', true),
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
   },
+  url: '/admin', // Caminho do admin
+  backend: env('STRAPI_ADMIN_BACKEND_URL', 'https://instituto-jr-backend.vercel.app'),
 });
