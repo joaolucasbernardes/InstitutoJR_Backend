@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "continue_doandos",
+  "info": {
+    "singularName": "continue-doando",
+    "pluralName": "continue-doandos",
+    "displayName": "Continue Doando"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Paragrafo1": {
+      "type": "text"
+    },
+    "Paragrafo2": {
+      "type": "text"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "escolher_valors",
+  "info": {
+    "singularName": "escolher-valor",
+    "pluralName": "escolher-valors",
+    "displayName": "Escolher Valor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Text": {
+      "type": "richtext"
+    },
+    "Conta": {
+      "type": "richtext"
+    },
+    "Valor1": {
+      "type": "biginteger"
+    },
+    "Valor2": {
+      "type": "biginteger"
+    },
+    "Valor3": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seja_um_doador_homes",
+  "info": {
+    "singularName": "seja-um-doador-home",
+    "pluralName": "seja-um-doador-homes",
+    "displayName": "Seja um doador (home)",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}

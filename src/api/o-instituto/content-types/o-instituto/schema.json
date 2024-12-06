@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "o_institutos",
+  "info": {
+    "singularName": "o-instituto",
+    "pluralName": "o-institutos",
+    "displayName": "O Instituto",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

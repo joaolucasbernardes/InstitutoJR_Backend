@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metodologias",
+  "info": {
+    "singularName": "metodologia",
+    "pluralName": "metodologias",
+    "displayName": "Metodologia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Textline1": {
+      "type": "richtext"
+    },
+    "TitleCard1": {
+      "type": "string"
+    },
+    "TextCard1": {
+      "type": "richtext"
+    },
+    "TitleCard2": {
+      "type": "string"
+    },
+    "TextCard2": {
+      "type": "richtext"
+    },
+    "TitleCard3": {
+      "type": "string"
+    },
+    "TextCard3": {
+      "type": "richtext"
+    },
+    "TextRodape1": {
+      "type": "richtext"
+    },
+    "TextRodape2": {
+      "type": "richtext"
+    }
+  }
+}

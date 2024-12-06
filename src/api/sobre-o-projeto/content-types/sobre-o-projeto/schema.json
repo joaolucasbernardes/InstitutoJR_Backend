@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sobre_o_projetos",
+  "info": {
+    "singularName": "sobre-o-projeto",
+    "pluralName": "sobre-o-projetos",
+    "displayName": "Sobre o Projeto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text1": {
+      "type": "richtext"
+    },
+    "Text2": {
+      "type": "richtext"
+    },
+    "Text3": {
+      "type": "richtext"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

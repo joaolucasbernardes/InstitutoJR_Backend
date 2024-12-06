@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seja_um_doador_como_doars",
+  "info": {
+    "singularName": "seja-um-doador-como-doar",
+    "pluralName": "seja-um-doador-como-doars",
+    "displayName": "Seja Um Doador (Como Doar)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "richtext"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
