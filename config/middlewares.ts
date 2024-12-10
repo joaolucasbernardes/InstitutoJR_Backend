@@ -17,7 +17,6 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
       origin: [
         'http://localhost:4200', // URL frontend Angular em desenvolvimento
         'https://instituto-jr-frontend.vercel.app', // URL em produção

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rede_socials",
+  "info": {
+    "singularName": "rede-social",
+    "pluralName": "rede-socials",
+    "displayName": "Rede Social"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FacebookLink": {
+      "type": "string"
+    },
+    "InstagramLink": {
+      "type": "string"
+    }
+  }
+}

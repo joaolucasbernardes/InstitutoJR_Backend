@@ -405,6 +405,7 @@ export interface ApiContinueDoandoContinueDoando
   extends Struct.CollectionTypeSchema {
   collectionName: 'continue_doandos';
   info: {
+    description: '';
     displayName: 'Continue Doando';
     pluralName: 'continue-doandos';
     singularName: 'continue-doando';
@@ -417,6 +418,7 @@ export interface ApiContinueDoandoContinueDoando
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -696,6 +698,35 @@ export interface ApiRealizacaoRealizacao extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiRedeSocialRedeSocial extends Struct.CollectionTypeSchema {
+  collectionName: 'rede_socials';
+  info: {
+    displayName: 'Rede Social';
+    pluralName: 'rede-socials';
+    singularName: 'rede-social';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    FacebookLink: Schema.Attribute.String;
+    InstagramLink: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rede-social.rede-social'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSejaUmDoadorComoDoarSejaUmDoadorComoDoar
   extends Struct.CollectionTypeSchema {
   collectionName: 'seja_um_doador_como_doars';
@@ -823,6 +854,34 @@ export interface ApiSobreOProjetoSobreOProjeto
     Text2: Schema.Attribute.RichText;
     Text3: Schema.Attribute.RichText;
     Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSpinnerSpinner extends Struct.CollectionTypeSchema {
+  collectionName: 'spinners';
+  info: {
+    displayName: 'Spinner';
+    pluralName: 'spinners';
+    singularName: 'spinner';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::spinner.spinner'
+    > &
+      Schema.Attribute.Private;
+    Logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1006,6 +1065,10 @@ export interface PluginReviewWorkflowsWorkflow
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
     publishedAt: Schema.Attribute.DateTime;
+    stageRequiredToPublish: Schema.Attribute.Relation<
+      'oneToOne',
+      'plugin::review-workflows.workflow-stage'
+    >;
     stages: Schema.Attribute.Relation<
       'oneToMany',
       'plugin::review-workflows.workflow-stage'
@@ -1343,10 +1406,12 @@ declare module '@strapi/strapi' {
       'api::pessoa-fisica.pessoa-fisica': ApiPessoaFisicaPessoaFisica;
       'api::pessoa-juridica.pessoa-juridica': ApiPessoaJuridicaPessoaJuridica;
       'api::realizacao.realizacao': ApiRealizacaoRealizacao;
+      'api::rede-social.rede-social': ApiRedeSocialRedeSocial;
       'api::seja-um-doador-como-doar.seja-um-doador-como-doar': ApiSejaUmDoadorComoDoarSejaUmDoadorComoDoar;
       'api::seja-um-doador-home.seja-um-doador-home': ApiSejaUmDoadorHomeSejaUmDoadorHome;
       'api::sobre-o-joao.sobre-o-joao': ApiSobreOJoaoSobreOJoao;
       'api::sobre-o-projeto.sobre-o-projeto': ApiSobreOProjetoSobreOProjeto;
+      'api::spinner.spinner': ApiSpinnerSpinner;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
